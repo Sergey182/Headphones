@@ -1,0 +1,167 @@
+.compatibility-inner {
+    display: flex;
+    flex-direction: column
+}
+
+.compatibility-inner-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+}
+
+
+.devices-list__item {
+    width: 260px;
+    height: 55px;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+}
+
+.devices-list__link {
+    display: block;
+    @include adaptive-font(14, 10);
+    color: #535353;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.compatibility-inner__title {
+    @include adaptive-font(34,30);
+    color: #535353;
+    text-align: center;
+    margin: 0 auto 3rem;
+
+    & span {
+        color: #8B75C8;
+    }
+}
+
+// CARDS
+
+.compatibility-inner__card {
+    width: 270px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #AEAEAE 1px 1px 10px 0.2px;
+    padding: .8rem;
+    border-radius: 5px;
+}
+
+.compatibility-card__top {
+    height: 10%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.instock {
+    flex: 1;
+    color: #0DB10A;
+}
+
+
+.heart-icon,
+.balance-icon {
+    position: relative;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 100%;
+    background-color: rgb(238, 238, 238);
+    right: 0.5rem;
+}
+
+.balance-icon {
+   right: 1.2rem;
+}
+
+.compatibility-card__image {
+    margin: auto;
+
+    & img {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+.compatibility-card__desc {
+    display: block;
+    @include adaptive-font(14, 10);
+    color: #535353;
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.compatibility-card__price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.price {
+    @include adaptive-font(20, 14);
+    font-weight: 700;
+}
+
+.compatibility-card__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.compatibility-card__button {
+    @include adaptive-font (13, 10);
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.3s linear;
+    border: 1px solid white;
+}
+
+.buy-btn {
+    padding: 0.6rem 0.7rem ;
+    background-color: #8B75C8;
+    color: $white;
+}
+
+.inbasket-btn {
+    padding: 0.6rem 0.7rem;
+    color: rgb(85, 85, 85);
+    border: 1px solid rgb(158, 158, 158);
+    background:transparent;
+}
+
+//CARDS END
+
+
+
+// RATING
+.starY,
+.starG {
+    width: 13px;
+    height: 13px;
+}
+
+.star-rating {
+    display: flex;
+}
+
+// RATING END
+
+.compatibility-inner__cards {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+

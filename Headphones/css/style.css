@@ -7055,7 +7055,7 @@ readers do not read off random characters that represent icons */
   width: 100%;
   height: 700px;
   background-color: #8B75C8;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .header-inner__content {
@@ -7114,6 +7114,152 @@ readers do not read off random characters that represent icons */
   box-shadow: white 1px 1px 15px 0.2px;
 }
 
+.compatibility-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.compatibility-inner-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 450px;
+}
+
+.devices-list__item {
+  width: 260px;
+  height: 55px;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+}
+
+.devices-list__link {
+  display: block;
+  color: #535353;
+  padding: 1rem;
+  text-align: center;
+}
+
+.compatibility-inner__title {
+  color: #535353;
+  text-align: center;
+  margin: 0 auto 3rem;
+}
+
+.compatibility-inner__title span {
+  color: #8B75C8;
+}
+
+.compatibility-inner__card {
+  width: 270px;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: #AEAEAE 1px 1px 10px 0.2px;
+  padding: .8rem;
+  border-radius: 5px;
+}
+
+.compatibility-card__top {
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.instock {
+  flex: 1;
+  color: #0DB10A;
+}
+
+.heart-icon,
+.balance-icon {
+  position: relative;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 100%;
+  background-color: #eeeeee;
+  right: 0.5rem;
+}
+
+.balance-icon {
+  right: 1.2rem;
+}
+
+.compatibility-card__image {
+  margin: auto;
+}
+
+.compatibility-card__image img {
+  display: block;
+  width: 100%;
+}
+
+.compatibility-card__desc {
+  display: block;
+  color: #535353;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.compatibility-card__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.compatibility-card__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.compatibility-card__button {
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s linear;
+  border: 1px solid white;
+}
+
+.buy-btn {
+  padding: 0.6rem 0.7rem;
+  background-color: #8B75C8;
+  color: #ffffff;
+}
+
+.inbasket-btn {
+  padding: 0.6rem 0.7rem;
+  color: #555555;
+  border: 1px solid #9e9e9e;
+  background: transparent;
+}
+
+.starY,
+.starG {
+  width: 13px;
+  height: 13px;
+}
+
+.star-rating {
+  display: flex;
+}
+
+.compatibility-inner__cards {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -7168,6 +7314,26 @@ body {
   }
 
   .header-inner__content-btn {
+    font-size: calc(10px + 3 * (100vw / 1200));
+  }
+
+  .devices-list__link {
+    font-size: calc(10px + 4 * (100vw / 1200));
+  }
+
+  .compatibility-inner__title {
+    font-size: calc(30px + 4 * (100vw / 1200));
+  }
+
+  .compatibility-card__desc {
+    font-size: calc(10px + 4 * (100vw / 1200));
+  }
+
+  .price {
+    font-size: calc(14px + 6 * (100vw / 1200));
+  }
+
+  .compatibility-card__button {
     font-size: calc(10px + 3 * (100vw / 1200));
   }
 
@@ -7266,6 +7432,26 @@ body {
   }
 
   .header-inner__content-btn {
+    font-size: calc(10px + 5.1 * ((100vw - 320px) / 1200));
+  }
+
+  .devices-list__link {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .compatibility-inner__title {
+    font-size: calc(30px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .compatibility-card__desc {
+    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .price {
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1200));
+  }
+
+  .compatibility-card__button {
     font-size: calc(10px + 5.1 * ((100vw - 320px) / 1200));
   }
 
