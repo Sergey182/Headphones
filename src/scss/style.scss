@@ -1,0 +1,38 @@
+// Переменные, миксины, шрифты и т.д
+@import "./vendor/reset";
+@import "./vendor/normalize";
+@import "./vendor/mixin";
+@import "fonts";
+@import "./vendor/variables";
+@import "./vendor/container";
+@import "./vendor/all";
+
+
+// Подключение секций 
+
+@import "./blocks/_header.scss";
+@import "./blocks/_burger.scss";
+@import "./blocks/_header-inner.scss";
+
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    @include adaptive-font(16, 12);
+    overflow-x: hidden;
+}
+
+
+

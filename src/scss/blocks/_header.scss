@@ -1,0 +1,406 @@
+// header top start
+
+
+.header__wrap {
+    width: 100%;
+    background-color: #fdfdfd;
+    height: 10.5rem;
+}
+
+.header__top {
+background-color: #251C41;
+}
+
+
+.header__top-wrap {
+    width: 100%;
+    height: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    background-color: #251C41;
+}
+
+
+
+.header__top-logo,
+.top-items {
+    height: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.top-items li {
+    padding-left: 2rem;
+}
+
+.logo-title {
+    @include adaptive-font(18,12);
+    color: $white;
+    padding-left: .5rem;
+}
+
+.logo-subtitle {
+    @include adaptive-font(13, 10);
+    color: $white;
+    padding-left: .5rem;
+}
+
+.top-link {
+     @include adaptive-font(13, 10);
+    color: $white;
+}
+
+.phone-img {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+
+// header top end
+
+// header middle start
+
+.header__mid {
+border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+
+.header__mid-wrap {
+    height: 6rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+}   
+
+.circle {
+    position: relative;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 100%;
+    box-shadow: #AEAEAE 1px 1px 10px 0.5px;
+}
+
+.tel-img {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 7px auto;
+}
+
+.header__mid-tel {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+.tel-info {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 1rem;
+}
+
+.tel-text {
+    @include adaptive-font(13, 10);
+    color: #AEAEAE;
+}
+
+.tel-number {
+    @include adaptive-font(24, 18);
+    color: #313131;
+    font-weight: 700;
+}
+
+// find form start
+.header-mid__find-form {
+    position: relative;
+}
+
+.header-mid__find-form input {
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem 0 1rem;
+    border: 1px solid #B2B2B2;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+}
+
+.header-mid__find-form button {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.header-mid__find-form button::after {
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free',
+    'Font Awesome 5 Brands';
+    font-size: 16px;
+    font-weight: 900;
+    color: #B2B2B2;
+}
+
+// find form end
+
+.header__mid-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    justify-content: space-between;
+}
+
+
+.balance,
+.heart,
+.basket {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 7px auto;
+}
+
+.sum {
+    position: absolute;
+    width: 23px;
+    background-color: #97D413;
+    text-align: center;
+    border-radius: 30px;
+    top: -10px;
+    right: -10px;
+    color: $white;
+}
+
+
+// header middle end
+
+
+
+// header bottom start
+
+.header__bottom-wrap {
+    width: 100%;
+    height: 2.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__bottom-nav {
+    width: 50%;
+
+}
+
+
+.header__bottom-nav-items {
+     display: flex;
+     flex-wrap: wrap;
+
+     justify-content: space-between;
+}
+
+
+.header__bottom-auth {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.account {
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.header__bottom-auth-enter {
+    padding-left: .7rem;
+}
+
+.header__bottom-catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-title {
+    @include adaptive-font(18, 12);
+    color: #313131;
+    border: none;
+    background: transparent;
+}
+
+
+
+
+.header__bottom-nav-link  {
+    position: relative;
+    @include adaptive-font(14, 10);
+    color: #313131;
+    transition: all 0.5s;
+
+    &:hover {
+        color: #97D413;
+    }
+}
+
+.header__bottom-nav-link::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0%;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: #97D413;
+    transition: all 0.3s ease-in-out;
+} 
+
+.header__bottom-nav-link:hover::after {
+    width: 100%;
+}
+
+
+.header__bottom-auth-enter {
+    @include adaptive-font(14, 10);
+    color: #313131;
+}
+
+
+// catalog burger
+
+// .catalog-btn {
+//     width: 1rem;
+//     height: 1rem;
+//     position: relative;
+//     display: block;
+//     cursor: pointer;
+// }
+
+// .catalog-btn span,
+// .catalog-btn span::after,
+// .catalog-btn span:before {
+//     position: absolute;
+//     width: 100%;
+//     height: 2px;
+//     background-color: rgb(0, 0, 0);
+//     top:70%;
+// }
+
+// .catalog-btn span::after,
+// .catalog-btn span::before {
+//     content: '';
+//     display: block;
+//     transition: 0.5s;
+// }
+
+// .catalog-btn span::before {
+//     transform: translateY(-7px);
+// }
+
+// .catalog-btn span::after {
+//     transform: translateY(5px);
+// }
+
+// .catalog-btn--active span {
+//     height: 0;
+// }
+
+// .catalog-btn--active span::before {
+//     transform: rotate(45deg);
+
+// }
+
+// .catalog-btn--active span::after {
+//     transform: rotate(-45deg);
+// }
+
+// catalog burger end
+
+
+// DROPDOWN BTN 
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-right: 1px solid #8B75C8;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+
+.dropdown-content-link::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #8B75C8;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+
+// header bottom end
+
+
+
+
+
+
+
+
+
+
+
