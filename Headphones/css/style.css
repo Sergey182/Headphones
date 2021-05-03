@@ -7117,6 +7117,7 @@ readers do not read off random characters that represent icons */
 .compatibility-inner {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5rem;
 }
 
 .compatibility-inner-content {
@@ -7160,6 +7161,8 @@ readers do not read off random characters that represent icons */
   box-shadow: #AEAEAE 1px 1px 10px 0.2px;
   padding: .8rem;
   border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .compatibility-card__top {
