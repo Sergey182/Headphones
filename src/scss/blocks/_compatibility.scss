@@ -1,3 +1,5 @@
+
+
 .compatibility-inner {
     display: flex;
     flex-direction: column;
@@ -11,14 +13,28 @@
     height: 450px;
 }
 
+.devices-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+
+    & li:not(:last-child) {
+        margin-bottom: 1.3rem;
+    }
+
+    @media (max-width: 1205px) {
+        margin-bottom: 1.3rem;
+    } 
+}
 
 .devices-list__item {
     width: 260px;
-    height: 55px;
-    margin-bottom: 1rem;
+    min-height: 55px;
     margin-right: 2rem;
     border: 1px solid rgb(209, 209, 209);
     border-radius: 5px;
+
 }
 
 .devices-list__link {
@@ -45,7 +61,7 @@
 
 .compatibility-inner__card {
     width: 270px;
-    height: 410px;
+    height: auto;
     display: flex;
     flex-direction: column;
     box-shadow: #AEAEAE 1px 1px 10px 0.2px;

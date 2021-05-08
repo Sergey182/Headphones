@@ -7127,10 +7127,20 @@ readers do not read off random characters that represent icons */
   height: 450px;
 }
 
+.devices-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+}
+
+.devices-list li:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+
 .devices-list__item {
   width: 260px;
-  height: 55px;
-  margin-bottom: 1rem;
+  min-height: 55px;
   margin-right: 2rem;
   border: 1px solid #d1d1d1;
   border-radius: 5px;
@@ -7155,7 +7165,7 @@ readers do not read off random characters that represent icons */
 
 .compatibility-inner__card {
   width: 270px;
-  height: 410px;
+  height: auto;
   display: flex;
   flex-direction: column;
   box-shadow: #AEAEAE 1px 1px 10px 0.2px;
@@ -7342,6 +7352,12 @@ body {
 
   body {
     font-size: calc(12px + 4 * (100vw / 1200));
+  }
+}
+
+@media (max-width: 1205px) {
+  .devices-list {
+    margin-bottom: 1.3rem;
   }
 }
 
