@@ -1,5 +1,3 @@
-
-
 .compatibility-inner {
     display: flex;
     flex-direction: column;
@@ -10,7 +8,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 450px;
+    height: auto;
 }
 
 .devices-list {
@@ -20,7 +18,7 @@
     height: auto;
 
     & li:not(:last-child) {
-        margin-bottom: 1.3rem;
+        margin-bottom: 1rem;
     }
 
     @media (max-width: 1205px) {
@@ -65,7 +63,7 @@
     display: flex;
     flex-direction: column;
     box-shadow: #AEAEAE 1px 1px 10px 0.2px;
-    padding: .8rem;
+    padding: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
     margin-right: 1rem;

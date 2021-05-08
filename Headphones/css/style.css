@@ -7124,7 +7124,7 @@ readers do not read off random characters that represent icons */
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  height: 450px;
+  height: auto;
 }
 
 .devices-list {
@@ -7135,7 +7135,7 @@ readers do not read off random characters that represent icons */
 }
 
 .devices-list li:not(:last-child) {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .devices-list__item {
@@ -7169,7 +7169,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-direction: column;
   box-shadow: #AEAEAE 1px 1px 10px 0.2px;
-  padding: .8rem;
+  padding: 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
   margin-right: 1rem;
@@ -7273,6 +7273,56 @@ readers do not read off random characters that represent icons */
   justify-content: space-between;
 }
 
+.choose__wrap {
+  width: 100%;
+  background-color: #8B75C8;
+  margin-bottom: 4rem;
+}
+
+.choose-inner {
+  padding: 3rem 0;
+}
+
+.choose-inner__title {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto .5rem;
+}
+
+.choose-inner__subtitle {
+  text-align: center;
+  margin: 0 auto 3rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.choose-inner__item-image {
+  position: relative;
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.choose-inner__item-image img {
+  width: 100%;
+  display: block;
+}
+
+.choose-inner__item-title {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.choose-inner__items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -7348,6 +7398,14 @@ body {
 
   .compatibility-card__button {
     font-size: calc(10px + 3 * (100vw / 1200));
+  }
+
+  .choose-inner__title {
+    font-size: calc(30px + 4 * (100vw / 1200));
+  }
+
+  .choose-inner__subtitle {
+    font-size: calc(30px + 4 * (100vw / 1200));
   }
 
   body {
@@ -7472,6 +7530,14 @@ body {
 
   .compatibility-card__button {
     font-size: calc(10px + 5.1 * ((100vw - 320px) / 1200));
+  }
+
+  .choose-inner__title {
+    font-size: calc(30px + 6.8 * ((100vw - 320px) / 1200));
+  }
+
+  .choose-inner__subtitle {
+    font-size: calc(30px + 6.8 * ((100vw - 320px) / 1200));
   }
 
   body {
